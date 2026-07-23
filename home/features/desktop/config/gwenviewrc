@@ -1,0 +1,19 @@
+[General]
+FullScreenBackground=FullScreenBackground::Image
+LastUsedVersion=210800
+
+[ImageView]
+AlphaBackgroundMode=AbstractImageView::AlphaBackgroundCheckBoard
+AnimationMethod=DocumentView::GLAnimation
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/nvme/Extra/Itchio/[Public] TWOB Dark Flock Ending Hotfix/images/Big Banner.png
+File2[$e]=$HOME/Pictures/Wallpapers/wallhaven_m3jme8.jpg
+Name1[$e]=Big Banner.png
+Name2[$e]=wallhaven_m3jme8.jpg
+
+[SideBar]
+InformationSplitterSizes=209,246

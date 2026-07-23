@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "none",
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "inlineChat.accessibleDiffView": "off",
+    "terminal.integrated.initialHint": false,
+    "chat.disableAIFeatures": true
+}

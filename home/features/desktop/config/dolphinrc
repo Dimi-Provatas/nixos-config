@@ -1,0 +1,38 @@
+MenuBar=Disabled
+
+[CompactMode]
+UseSystemFont=true
+
+[ContentDisplay]
+ElidingMode=Right
+UsePermissionsFormat=CombinedFormat
+
+[DetailsMode]
+UseSystemFont=true
+
+[General]
+AlwaysShowTabBar=true
+EditableUrl=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2026,6,30,15,31,28.801
+
+[IconsMode]
+UseSystemFont=true
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail
+
+[UiSettings]
+ColorScheme=BreezeDark
