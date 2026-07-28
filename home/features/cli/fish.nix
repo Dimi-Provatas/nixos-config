@@ -25,6 +25,7 @@ in
 
         "rebuild" = "sudo nixos-rebuild switch --flake .#$(hostname)";
         "update" = "sudo nixos-rebuild switch --upgrade --flake .#$(hostname)";
+        "shell" = "nix-shell --run fish";
       };
 
       shellInit = ''
