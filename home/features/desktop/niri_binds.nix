@@ -104,14 +104,14 @@
     "ipc"
     "call"
     "brightness"
-    "increase"
+    "decrease"
   ];
   "XF86MonBrightnessUp".action.spawn = [
     "noctalia-shell"
     "ipc"
     "call"
     "brightness"
-    "decrease"
+    "increase"
   ];
 
   "XF86AudioPlay".action.spawn = [
