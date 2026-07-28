@@ -58,6 +58,7 @@
     power-profiles-daemon.enable = true;
     upower.enable = true;
     fstrim.enable = true;
+    lact.enable = true;
 
     udev.packages = with pkgs; [ via ];
 

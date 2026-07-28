@@ -11,7 +11,7 @@
   ];
 
   boot = {
-    # kernelPackages = pkgs.linuxPackages_7_2;
+    kernelPackages = pkgs.linuxPackages_zen;
 
     initrd = {
       availableKernelModules = [
