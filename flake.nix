@@ -2,8 +2,8 @@
   description = "TheSheepster Flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -35,7 +35,7 @@
       self,
       home-manager,
       nixpkgs,
-      nixpkgs-stable,
+      nixpkgs-unstable,
       ...
     }@inputs:
     let
@@ -62,18 +62,6 @@
               nixpkgs.overlays = [
                 inputs.dolphin-overlay.overlays.default
                 inputs.spt-linux-guide.overlays.default
-
-                (final: prev: {
-                  fwupd = prev.fwupd.overrideAttrs (oldAttrs: {
-                    patches = (oldAttrs.patches or [ ]) ++ [
-                      (final.fetchpatch {
-                        name = "fwupd-jcat-limit-fix.patch";
-                        url = "https://github.com/fwupd/fwupd/pull/10479.patch";
-                        hash = "sha256-wthjHm3yjevkOCAqCgZNpyybbI3TZ+07knOdRbUQV7g=";
-                      })
-                    ];
-                  });
-                })
               ];
             }
           ];

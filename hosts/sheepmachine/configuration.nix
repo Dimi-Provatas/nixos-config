@@ -29,8 +29,11 @@
 
   environment.systemPackages = with pkgs; [
     lenovo-legion
+    libdisplay-info
     logiops
+    pkg-config
     wayvr
+
     spt-additions
     spt-server
     spt-launcher

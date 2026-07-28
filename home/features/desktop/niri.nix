@@ -173,6 +173,7 @@ in
     };
 
     home.pointerCursor = {
+      enable = true;
       name = "breeze_cursors";
       size = 10;
       package = pkgs.kdePackages.breeze;
