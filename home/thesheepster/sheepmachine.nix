@@ -85,7 +85,13 @@
     git.signing.key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK2RizeXuD65in8fXxqCcVlc2u6Ekk5pnJzxCm3ba5HO james.provatas@gmail.com";
   };
 
-  home.packages = with pkgs; [
-    amdgpu_top
-  ];
+  home = {
+    packages = with pkgs; [
+      amdgpu_top
+    ];
+
+    file = {
+      ".config/nixpkgs/config.nix".text = "{ allowUnfree = true; }";
+    };
+  };
 }
