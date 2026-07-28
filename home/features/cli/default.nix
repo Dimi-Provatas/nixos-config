@@ -32,7 +32,6 @@
 
     btop = {
       enable = true;
-
     };
   };
 
@@ -54,6 +53,7 @@
     inetutils
     jq
     lazygit
+    mlocate
     netcat
     pciutils
     python3
