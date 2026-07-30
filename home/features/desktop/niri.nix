@@ -159,6 +159,8 @@ in
       XDG_CONFIG_HOME = "${config.home.homeDirectory}/.config";
       XDG_DATA_HOME = "${config.home.homeDirectory}/.local/share";
       XDG_DATA_DIRS = lib.concatStringsSep ":" [
+        "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+        "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
         "${config.home.profileDirectory}/share"
         "${pkgs.kdePackages.kservice}/share"
         "${pkgs.kdePackages.kconfig}/share"

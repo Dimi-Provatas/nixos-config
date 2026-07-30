@@ -12,6 +12,8 @@ in
   options.features.desktop.fonts.enable = mkEnableOption "install additional fonts for desktop apps";
 
   config = mkIf cfg.enable {
+    fonts.fontconfig.enable = true;
+
     home.packages = with pkgs; [
       font-manager
 
