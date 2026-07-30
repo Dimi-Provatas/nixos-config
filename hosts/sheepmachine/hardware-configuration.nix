@@ -30,6 +30,7 @@
     kernelModules = [
       "kvm-amd"
       "lenovo-legion-module"
+      "ec_sys"
     ];
 
     extraModulePackages = with config.boot.kernelPackages; [ lenovo-legion-module ];
@@ -51,6 +52,10 @@
       "preempt=full" # Soft RT latency
       "threadirqs" # Soft RT latency
     ];
+
+    extraModprobeConfig = ''
+      options ec_sys write_support=1
+    '';
 
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
