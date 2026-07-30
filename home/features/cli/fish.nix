@@ -33,9 +33,6 @@ in
         fish_vi_key_bindings
       '';
 
-      # if [ (tty) = "/dev/tty1" ]
-      #   exec niri-session
-      # end
       interactiveShellInit = ''
         clear
         hyfetch
