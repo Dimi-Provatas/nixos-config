@@ -38,6 +38,7 @@
   environment.systemPackages = with pkgs; [
     curl
     git
+    localsend
     neovim
     wget
   ];

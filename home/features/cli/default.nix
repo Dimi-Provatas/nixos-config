@@ -47,6 +47,7 @@
     curl
     fd
     gcc
+    gdb
     git
     gnumake
     htop
@@ -64,7 +65,6 @@
     unzip
     usbutils
     wget
-    zip
     zip
   ];
 }

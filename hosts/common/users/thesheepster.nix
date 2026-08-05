@@ -9,17 +9,17 @@
     isNormalUser = true;
     initialHashedPassword = "$y$j9T$I/M20OmRYebQH4dObfKUU/$Qt0EgemRWUSjr/cE8LEdrrfv7zep7Q6PYbevHQfTK6B";
     extraGroups = [
-      "networkmanager"
-      "wheel"
-      "libvirtd"
       "audio"
-      "video"
-      "plugdev"
+      "dialout"
       "input"
       "kvm"
+      "libvirtd"
+      "networkmanager"
+      "plugdev"
       "qemu-libvirtd"
+      "video"
+      "wheel"
       "wireshark"
-      "dialout"
     ];
 
     packages = [

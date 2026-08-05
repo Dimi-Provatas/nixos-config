@@ -212,6 +212,7 @@ in
         breeze-icons
         dolphin
         dolphin-plugins
+        filelight
         gwenview
         kate
         kcalc
