@@ -188,6 +188,7 @@ in
       [
         alacritty
         appimage-run
+        blender
         gimp
         gnome-boxes
         grim

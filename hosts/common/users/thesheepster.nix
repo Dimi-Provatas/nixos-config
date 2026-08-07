@@ -12,6 +12,7 @@
       "audio"
       "dialout"
       "input"
+      "kmsg"
       "kvm"
       "libvirtd"
       "networkmanager"

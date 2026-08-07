@@ -62,6 +62,10 @@
               nixpkgs.overlays = [
                 inputs.dolphin-overlay.overlays.default
                 inputs.spt-linux-guide.overlays.default
+
+                (final: prev: {
+                  lenovo-legion = nixpkgs-unstable.legacyPackages.${final.system}.lenovo-legion;
+                })
               ];
             }
           ];
