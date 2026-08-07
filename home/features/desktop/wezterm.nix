@@ -75,9 +75,8 @@
     wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
       local tab_style = {}
 
-      local is_last_tab = tab.tab_index == (#tabs - 1)
       local is_first_tab = tab.tab_index == 0
-      local is_next_tab_active = #tabs[tab.tab_index + 1].is_active
+      local is_last_tab = tab.tab_index == (#tabs - 1)
 
       local background = "#2d1040"
       local foreground = "#bbbbbb"
@@ -96,20 +95,23 @@
       table.insert(tab_style, { Foreground = { Color = foreground } })
       table.insert(tab_style, { Text = " " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. " " })
 
-      if not tab.is_active and not is_next_tab_active then
+      local next_tab = tabs[tab.tab_index + 2] -- Fuck Lua and its Base-1 indexing
+      local is_next_tab_active = next_tab and next_tab.is_active or false
+      if not tab.is_active and not is_last_tab and not is_next_tab_active then
         table.insert(tab_style, { Background = { Color = background } })
         table.insert(tab_style, { Foreground = { Color = foreground } })
-        table.insert(tab_style, { Text = "|" })
+        table.insert(tab_style, { Text = wezterm.nerdfonts.pl_left_soft_divider })
       end
 
       if tab.is_active then
         table.insert(tab_style, { Foreground = { Color = "#8a2be2" } })
         table.insert(tab_style, { Background = { Color = (is_last_tab and "none" or "#2d1040") } })
+        table.insert(tab_style, { Text = wezterm.nerdfonts.pl_left_hard_divider })
       elseif is_last_tab then
         table.insert(tab_style, { Background = { Color = "none" } })
         table.insert(tab_style, { Foreground = { Color = "#2d1040" } })
+        table.insert(tab_style, { Text = wezterm.nerdfonts.pl_left_hard_divider })
       end
-      table.insert(tab_style, { Text = wezterm.nerdfonts.pl_left_hard_divider })
 
       return tab_style
     end)
