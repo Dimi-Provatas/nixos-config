@@ -62,6 +62,7 @@
     upower.enable = true;
     fstrim.enable = true;
     lact.enable = true;
+    tailscale.enable = true;
 
     udev.packages = with pkgs; [ via ];
 

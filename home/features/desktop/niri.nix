@@ -198,6 +198,7 @@ in
         pulsemixer
         shared-mime-info
         slurp
+        thunderbird
         vlc
         wdisplays
         wezterm
