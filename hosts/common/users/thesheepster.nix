@@ -11,6 +11,7 @@
     extraGroups = [
       "audio"
       "dialout"
+      "gamemode"
       "input"
       "kmsg"
       "kvm"
