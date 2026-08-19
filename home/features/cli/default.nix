@@ -57,6 +57,7 @@
     mlocate
     netcat
     pciutils
+    pv
     python3
     ripgrep
     rustup
