@@ -87,6 +87,10 @@
       execWheelOnly = true;
       wheelNeedsPassword = true;
     };
+
+    rtkit = {
+      enable = true;
+    };
   };
 
   services = {
