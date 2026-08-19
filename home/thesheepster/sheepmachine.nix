@@ -88,6 +88,8 @@
   home = {
     packages = with pkgs; [
       amdgpu_top
+      shadps4
+      shadps4-qtlauncher
     ];
 
     file = {
