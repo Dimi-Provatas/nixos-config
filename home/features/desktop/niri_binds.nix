@@ -38,6 +38,7 @@
   "Mod+Shift+J".action.focus-monitor-down = { };
   "Mod+Shift+K".action.focus-monitor-up = { };
   "Mod+Shift+L".action.focus-monitor-right = { };
+  "Mod+Shift+F".action.fullscreen-window = { };
 
   "Mod+O".action.spawn = [
     "niri"

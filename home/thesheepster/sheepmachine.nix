@@ -44,7 +44,6 @@
               at-startup = true;
             }
           ];
-          open-maximized = true;
           open-on-output = "eDP-1";
         }
         {
@@ -66,6 +65,15 @@
           ];
           open-on-output = "Philips Consumer Electronics Company 49M2C8900 AU42425001402";
           open-on-workspace = "4";
+        }
+        {
+          matches = [
+            {
+              title = "EscapeFromTarkov";
+            }
+          ];
+          open-maximized = true;
+          open-fullscreen = true;
         }
       ];
 
