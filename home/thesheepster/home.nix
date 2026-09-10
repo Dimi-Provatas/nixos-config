@@ -40,6 +40,7 @@
       firefox
       lmms
       lutris
+      muse-sounds-manager
       musescore
       solaar
     ];
