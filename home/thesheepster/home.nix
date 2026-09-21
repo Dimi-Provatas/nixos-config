@@ -43,6 +43,8 @@
       muse-sounds-manager
       musescore
       solaar
+      tor
+      tor-browser
     ];
 
     file = { };
