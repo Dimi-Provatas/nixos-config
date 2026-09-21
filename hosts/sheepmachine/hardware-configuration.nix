@@ -51,6 +51,7 @@
       "amdgpu.cik_support=1"
       "preempt=full" # Soft RT latency
       "threadirqs" # Soft RT latency
+      "amdgpu.dc_feature_mask=0x400" # enable FRL since it is currently disabled by default
     ];
 
     extraModprobeConfig = ''
@@ -100,7 +101,6 @@
   swapDevices = [
     {
       device = "/dev/disk/by-uuid/c151736e-0a75-4876-9f5c-654e2a4d7e27";
-      size = 32 * 1024;
     }
   ];
 

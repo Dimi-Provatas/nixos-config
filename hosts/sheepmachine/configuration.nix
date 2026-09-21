@@ -28,6 +28,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    drm_info
     lenovo-legion
     libdisplay-info
     logiops
