@@ -13,7 +13,7 @@
     audible_bell = "Disabled";
 
     font = lib.generators.mkLuaInline "wezterm.font({ family = 'MesloLGS Nerd Font', weight = 'Medium'})";
-    font_size = 9;
+    font_size = 10;
 
     enable_scroll_bar = true;
     scrollback_lines = 65535;

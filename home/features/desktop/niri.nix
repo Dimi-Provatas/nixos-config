@@ -105,9 +105,9 @@ in
           };
 
           "Philips Consumer Electronics Company 49M2C8900 AU42425001402" = {
-            mode.width = 3840;
-            mode.height = 1080;
-            mode.refresh = 120.000;
+            mode.width = 5120;
+            mode.height = 1440;
+            mode.refresh = 75.001;
             scale = 1.0;
             position.x = 1920;
             position.y = 0;
