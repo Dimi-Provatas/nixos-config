@@ -7,9 +7,20 @@
     ./hardware-configuration.nix
   ];
 
-  systemd.tmpfiles.rules = [
-    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
-  ];
+  systemd = {
+    tmpfiles.rules = [
+      "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+      "L+ /lib/firmware/regulatory.db - - - - ${pkgs.wireless-regdb}/lib/firmware/regulatory.db"
+      "L+ /lib/firmware/regulatory.db.p7s - - - - ${pkgs.wireless-regdb}/lib/firmware/regulatory.db.p7s"
+    ];
+
+    services.iw-reg-set = {
+      serviceConfig = {
+        ExecStart = "${pkgs.iw}/bin/iw reg set PL";
+      };
+      wantedBy = [ "multi-user.target" ];
+    };
+  };
 
   time.timeZone = "Europe/Berlin";
 
@@ -29,6 +40,7 @@
 
   environment.systemPackages = with pkgs; [
     drm_info
+    iw
     lenovo-legion
     libdisplay-info
     logiops
@@ -46,6 +58,7 @@
     steam = {
       enable = true;
       gamescopeSession.enable = true;
+      remotePlay.openFirewall = true;
     };
 
     gamemode = {

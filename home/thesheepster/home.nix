@@ -10,6 +10,7 @@
 
     git = {
       enable = true;
+      lfs.enable = true;
 
       signing.signByDefault = true;
 
@@ -20,7 +21,6 @@
         };
 
         init.defaultBranch = "master";
-        lfs.enable = true;
         gpg.format = "ssh";
       };
     };
@@ -45,6 +45,7 @@
       solaar
       tor
       tor-browser
+      unityhub
     ];
 
     file = { };

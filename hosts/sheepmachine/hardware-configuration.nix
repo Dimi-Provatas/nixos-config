@@ -115,6 +115,9 @@
 
     cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
+    enableRedistributableFirmware = true;
+    firmware = [ pkgs.wireless-regdb ];
+
     graphics = {
       enable = true;
       enable32Bit = true;
