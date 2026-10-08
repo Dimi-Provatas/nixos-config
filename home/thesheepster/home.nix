@@ -42,6 +42,7 @@
       lutris
       muse-sounds-manager
       musescore
+      rar
       solaar
       tor
       tor-browser
