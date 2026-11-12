@@ -36,10 +36,13 @@
       audacity
       chromium
       discord
+      dotnetCorePackages.dotnet_8.runtime
+      dotnetCorePackages.dotnet_8.sdk
       easyeffects
       firefox
       lmms
       lutris
+      mono
       muse-sounds-manager
       musescore
       rar
